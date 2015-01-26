@@ -40,15 +40,21 @@
 
 .home-bottom {
   padding: $column 0;
+
+  .mug {
+    width: 100%;
+    margin: 1em auto;
+  }
 }
 
 .home-contact--info {
   width: 30%;
-  float: left;
+  float: right;
+  text-align: center;
 }
 
 .home-contact--form {
   width: 60%;
-  margin-left: 10%;
-  float: right;
+  margin-right: 10%;
+  float: left;
 }

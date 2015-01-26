@@ -687,7 +687,8 @@ a {
   -moz-transform: translateX(80px);
   -ms-transform: translateX(80px);
   -o-transform: translateX(80px);
-  transform: translateX(80px); }
+  transform: translateX(80px);
+  box-shadow: inset 1px -1px 20px 1px #000; }
   #site-navigation .menu {
     margin: 10px 0 16px; }
   #site-navigation .sub-menu {
@@ -1019,15 +1020,19 @@ body {
 
 .home-bottom {
   padding: 4.235801032em 0; }
+  .home-bottom .mug {
+    width: 100%;
+    margin: 1em auto; }
 
 .home-contact--info {
   width: 30%;
-  float: left; }
+  float: right;
+  text-align: center; }
 
 .home-contact--form {
   width: 60%;
-  margin-left: 10%;
-  float: right; }
+  margin-right: 10%;
+  float: left; }
 
 .site-footer {
   background: #424242;
