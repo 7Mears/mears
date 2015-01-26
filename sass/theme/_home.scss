@@ -16,6 +16,7 @@
 
   background: url('/wp-content/themes/mears/img/office-space.jpg');
   background-size: cover;
+  background-repeat:no-repeat no-repeat;
 
   .home-middle-widget {
     max-width: 1400px;
@@ -54,7 +55,6 @@
 }
 
 .home-contact--form {
-  width: 60%;
-  margin-right: 10%;
+  width: 50%;
   float: left;
 }

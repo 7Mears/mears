@@ -247,7 +247,7 @@ textarea {
   font-family: "Varela Round", sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 2;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased; }
 
@@ -255,6 +255,7 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
   color: #424242;
   font-family: "Fjalla One", sans-serif;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased; }
 
@@ -402,7 +403,7 @@ input[type="submit"],
   transition: all 0.3s linear;
   border: 3px solid #00BCD4;
   padding: 10px 20px;
-  border-radius: 10px; }
+  border-radius: 5px; }
 
 button:hover,
 input:hover[type="button"],
@@ -420,21 +421,21 @@ textarea {
   display: block;
   width: 100%;
   padding: 10px 20px;
-  border: 3px solid;
+  border: 2px solid;
   clear: both;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   transition: all 0.3s linear;
   -webkit-appearance: none;
   -webkit-box-shadow: none;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px; }
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
 
 input:focus,
 textarea:focus {
   outline: none;
-  border-color: rgba(0, 0, 0, 0.15);
+  border-color: rgba(0, 0, 0, 0.25);
   background-color: #FFF;
   -webkit-box-shadow: 0 0 20px #cccccc;
   -moz-box-shadow: 0 0 20px #cccccc;
@@ -550,7 +551,7 @@ a {
 
 .nav-title {
   color: #EEEEEE;
-  padding-top: 18px;
+  padding: 18px 0;
   margin: 0; }
 
 .nav-wrap {
@@ -615,7 +616,16 @@ a {
   top: 10px;
   height: 100%;
   width: 50px;
-  background: #EEEEEE; }
+  background: #EEEEEE;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+  #menu-trigger:hover {
+    outline: none;
+    -webkit-box-shadow: 0 0 20px #cccccc;
+    -moz-box-shadow: 0 0 20px #cccccc;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); }
 
 /* this span is the central line in the menu icon */
 .menu-icon {
@@ -666,7 +676,7 @@ a {
     transform: rotate(-45deg); }
 
 #site-navigation {
-  position: fixed;
+  position: absolute;
   height: 100%;
   right: 0;
   top: 0;
@@ -687,10 +697,7 @@ a {
   -moz-transform: translateX(80px);
   -ms-transform: translateX(80px);
   -o-transform: translateX(80px);
-  transform: translateX(80px);
-  box-shadow: inset 1px -1px 20px 1px #000; }
-  #site-navigation .menu {
-    margin: 10px 0 16px; }
+  transform: translateX(80px); }
   #site-navigation .sub-menu {
     padding: 0 10px 20px 0;
     display: none; }
@@ -1002,7 +1009,8 @@ body {
 
 .home-middle {
   background: url("/wp-content/themes/mears/img/office-space.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-repeat: no-repeat no-repeat; }
   .home-middle .home-middle-widget {
     max-width: 1400px;
     margin: 0 auto;
@@ -1030,12 +1038,23 @@ body {
   text-align: center; }
 
 .home-contact--form {
-  width: 60%;
-  margin-right: 10%;
+  width: 50%;
   float: left; }
 
 .site-footer {
   background: #424242;
   color: #EEEEEE;
-  padding: 1.618em;
+  min-width: 100%;
+  padding-top: 4.235801032em;
   text-align: center; }
+  .site-footer ul {
+    margin: 0;
+    padding: 0; }
+  .site-footer li {
+    display: inline-block;
+    padding: 1.618em; }
+
+.name {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 28.8px;
+  font-size: 1.8rem; }

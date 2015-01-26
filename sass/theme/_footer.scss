@@ -1,7 +1,23 @@
 .site-footer {
   background: $color__dark;
   color: $color__light-alt;
+  min-width: 100%;
 
-  padding: $gutter;
+  padding-top: $column;
   text-align: center;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    padding: $gutter;
+  }
+}
+
+.name {
+  font-family: $font__alt;
+  @include font-size(1.8);
 }
