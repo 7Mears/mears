@@ -1,0 +1,54 @@
+.home-top {
+  padding: $column 0 ($column * 2) 0;
+}
+
+.home-top-widget {
+  h1 {
+    max-width: 500px;
+  }
+  p {
+    max-width: 800px;
+  }
+}
+
+
+.home-middle {
+
+  background: url('/wp-content/themes/mears/img/office-space.jpg');
+  background-size: cover;
+
+  .home-middle-widget {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: ($column * 2) 50px;
+  }
+
+  p {
+    color: $color__light-alt;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    -webkit-column-gap: 50px;
+    -moz-column-gap: 50px;
+    column-gap: 50px;
+  }
+
+  h2 {
+    color: $color__light-alt;
+  }
+}
+
+.home-bottom {
+  padding: $column 0;
+}
+
+.home-contact--info {
+  width: 30%;
+  float: left;
+}
+
+.home-contact--form {
+  width: 60%;
+  margin-left: 10%;
+  float: right;
+}

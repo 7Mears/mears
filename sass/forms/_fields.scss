@@ -1,0 +1,27 @@
+input,
+select,
+textarea {
+	border-color: rgba(0,0,0,0.1);
+	background-color: $color__light;
+	display: block;
+	width: 100%;
+	padding: 10px 20px;
+	border: 3px solid;
+	clear: both;
+	@include transition(all 0.3s linear);
+	-webkit-appearance: none;
+	-webkit-box-shadow: none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+input:focus,
+textarea:focus {
+	outline: none;
+	border-color: rgba(0,0,0,0.15);
+	background-color: #FFF;
+	-webkit-box-shadow: 0 0 20px #cccccc;
+	-moz-box-shadow: 0 0 20px #cccccc;
+	box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
