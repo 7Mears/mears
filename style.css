@@ -398,20 +398,21 @@ input[type="submit"],
   cursor: pointer;
   width: auto;
   color: #00BCD4;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  transition: all 0.3s linear;
   border: 3px solid #00BCD4;
   padding: 10px 20px;
-  border-radius: 5px; }
+  border-radius: 10px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
 
 button:hover,
 input:hover[type="button"],
 input:hover[type="reset"],
 input:hover[type="submit"],
 .button:hover {
-  border-color: #FFC107;
-  color: #FFC107; }
+  border-color: #00BCD4;
+  background: #00BCD4;
+  color: #FAFAFA; }
 
 input,
 select,
@@ -428,9 +429,9 @@ textarea {
   transition: all 0.3s linear;
   -webkit-appearance: none;
   -webkit-box-shadow: none;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px; }
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px; }
 
 input:focus,
 textarea:focus {
@@ -511,19 +512,6 @@ a {
 .menu-toggle {
   display: none; }
 
-@media screen and (max-width: 600px) {
-  .main-navigation ul li {
-    width: 100%;
-    padding: 25px 0;
-    text-align: center; }
-
-  .menu-toggle,
-  .main-navigation.toggled .nav-menu {
-    display: block;
-    width: 100px; }
-
-  .main-navigation ul {
-    display: none; } }
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
@@ -617,7 +605,7 @@ a {
   height: 100%;
   width: 50px;
   background: #EEEEEE;
-  border-radius: 5px;
+  border-radius: 10px;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   transition: all 0.3s linear; }
@@ -676,7 +664,7 @@ a {
     transform: rotate(-45deg); }
 
 #site-navigation {
-  position: absolute;
+  position: fixed;
   height: 100%;
   right: 0;
   top: 0;
@@ -1008,7 +996,8 @@ body {
   max-width: 800px; }
 
 .home-middle {
-  background: url("/wp-content/themes/mears/img/office-space.jpg");
+  background: #424242;
+  background-image: url("http://localhost/Mears/wp-content/uploads/2015/01/office-space.jpg");
   background-size: cover;
   background-repeat: no-repeat no-repeat; }
   .home-middle .home-middle-widget {
@@ -1023,6 +1012,11 @@ body {
     -webkit-column-gap: 50px;
     -moz-column-gap: 50px;
     column-gap: 50px; }
+    @media screen and (max-width: 800px) {
+      .home-middle p {
+        -webkit-columns: 1;
+        -moz-columns: 1;
+        columns: 1; } }
   .home-middle h2 {
     color: #EEEEEE; }
 
@@ -1038,8 +1032,16 @@ body {
   text-align: center; }
 
 .home-contact--form {
-  width: 50%;
+  width: 60%;
   float: left; }
+
+@media screen and (max-width: 800px) {
+  .home-contact--info,
+  .home-contact--form {
+    width: 100%; }
+    .home-contact--info .mug,
+    .home-contact--form .mug {
+      display: none; } }
 
 .site-footer {
   background: #424242;

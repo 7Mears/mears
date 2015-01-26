@@ -13,8 +13,8 @@
 
 
 .home-middle {
-
-  background: url('/wp-content/themes/mears/img/office-space.jpg');
+  background: $color__dark;
+  background-image: url('http://localhost/Mears/wp-content/uploads/2015/01/office-space.jpg');
   background-size: cover;
   background-repeat:no-repeat no-repeat;
 
@@ -32,6 +32,12 @@
     -webkit-column-gap: 50px;
     -moz-column-gap: 50px;
     column-gap: 50px;
+
+    @media screen and (max-width: $M) {
+      -webkit-columns: 1;
+      -moz-columns: 1;
+      columns: 1;
+    }
   }
 
   h2 {
@@ -55,6 +61,17 @@
 }
 
 .home-contact--form {
-  width: 50%;
+  width: 60%;
   float: left;
+}
+
+.home-contact--info,
+.home-contact--form {
+  @media screen and (max-width: $M) {
+    width: 100%;
+
+    .mug {
+      display: none;
+    }
+  }
 }

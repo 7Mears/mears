@@ -6,10 +6,10 @@ input[type="submit"],
 	cursor: pointer;
 	width: auto;
 	color: $color__primary;
-	@include transition(all 0.3s linear);
 	border: 3px solid $color__primary;
 	padding: 10px 20px;
 	border-radius: $radius;
+	@include transition(all 0.3s linear);
 }
 
 button:hover,
@@ -17,6 +17,7 @@ input:hover[type="button"],
 input:hover[type="reset"],
 input:hover[type="submit"],
 .button:hover {
-	border-color: $color__accent;
-	color: $color__accent;
+	border-color: $color__primary;
+	background: $color__primary;
+	color: $color__light;
 }
