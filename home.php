@@ -16,22 +16,24 @@ get_header(); ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 
+    <h3>Portfolio</h3>
+    <p>A few selected pieces of works that I have done, check them out!</p>
     <?php if ( have_posts() ) : ?>
 
       <?php /* Start the Loop */ ?>
       <?php while ( have_posts() ) : the_post(); ?>
-      <div class="portfolio-post">
-
-        <div class="portfolio-post--entry">
-          <h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-          <?php the_content(); ?>
-
-          <a class="button" href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">View more</a>
-        </div>
+      <div class="portfolio-post--entry">
+        <h2 class="portfolio-post--title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
         <div class="portfolio-post--image">
-          <a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail('large'); } ?></a>
+          <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail('large'); } ?></a>
         </div>
+
+        <div class="portfolio-post--links">
+          <a href="<?php the_permalink(); ?>" class="button">More info</a>
+          <a href="<?php the_field('website_link'); ?>" class="button">Live site</a>
+        </div>
+
 
       </div>
       <?php endwhile; ?>
