@@ -1043,6 +1043,23 @@ body {
     .home-contact--form .mug {
       display: none; } }
 
+.portfolio-post {
+  margin-top: 4.235801032em;
+  content: "";
+  display: table; }
+
+.portfolio-post--image {
+  width: 30%;
+  float: left; }
+  .portfolio-post--image img {
+    height: 100%;
+    width: 100%; }
+
+.portfolio-post--entry {
+  width: 70%;
+  float: left;
+  padding: 0 4.235801032em 1.618em 0; }
+
 .site-footer {
   background: #424242;
   color: #EEEEEE;

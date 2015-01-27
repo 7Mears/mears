@@ -10,6 +10,12 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+		<?php
+		if (has_post_thumbnail( $post->ID ) ):
+			echo get_the_post_thumbnail( $post_id, 'full', array( 'class' => 'the-post-image' ) );
+		endif;
+		?>
+
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'content', 'single' ); ?>
