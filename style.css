@@ -67,24 +67,10 @@ html {
 body {
   margin: 0; }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
   display: block; }
 
-audio,
-canvas,
-progress,
-video {
+audio, canvas, progress, video {
   display: inline-block;
   vertical-align: baseline; }
 
@@ -92,22 +78,19 @@ audio:not([controls]) {
   display: none;
   height: 0; }
 
-[hidden],
-template {
+[hidden], template {
   display: none; }
 
 a {
   background-color: transparent; }
 
-a:active,
-a:hover {
+a:active, a:hover {
   outline: 0; }
 
 abbr[title] {
   border-bottom: 1px dotted; }
 
-b,
-strong {
+b, strong {
   font-weight: bold; }
 
 dfn {
@@ -124,8 +107,7 @@ mark {
 small {
   font-size: 80%; }
 
-sub,
-sup {
+sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -153,18 +135,11 @@ hr {
 pre {
   overflow: auto; }
 
-code,
-kbd,
-pre,
-samp {
+code, kbd, pre, samp {
   font-family: monospace, monospace;
   font-size: 1em; }
 
-button,
-input,
-optgroup,
-select,
-textarea {
+button, input, optgroup, select, textarea {
   color: inherit;
   font: inherit;
   margin: 0; }
@@ -172,44 +147,35 @@ textarea {
 button {
   overflow: visible; }
 
-button,
-select {
+button, select {
   text-transform: none; }
 
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer; }
 
-button[disabled],
-html input[disabled] {
+button[disabled], html input[disabled] {
   cursor: default; }
 
-button::-moz-focus-inner,
-input::-moz-focus-inner {
+button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
 input {
   line-height: normal; }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   padding: 0; }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
 input[type="search"] {
   -webkit-appearance: textfield;
   box-sizing: content-box; }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 fieldset {
@@ -231,20 +197,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-td,
-th {
+td, th {
   padding: 0; }
 
 /*--------------------------------------------------------------
 2.0 Typography
 --------------------------------------------------------------*/
-body,
-button,
-input,
-select,
-textarea {
+body, button, input, select, textarea {
   color: #607D8B;
-  font-family: "Varela Round", sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 2;
@@ -254,7 +215,7 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both;
   color: #424242;
-  font-family: "Fjalla One", sans-serif;
+  font-family: 'Fjalla One', sans-serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased; }
@@ -334,9 +295,7 @@ big {
 html {
   box-sizing: border-box; }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
   box-sizing: inherit; }
 
@@ -344,8 +303,7 @@ body {
   background: #FAFAFA;
   /* Fallback for when there is no custom background color defined. */ }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before, blockquote:after, q:before, q:after {
   content: ""; }
 
 blockquote, q {
@@ -366,8 +324,7 @@ ul {
 ol {
   list-style: decimal; }
 
-li > ul,
-li > ol {
+li > ul, li > ol {
   margin-bottom: 0;
   margin-left: 1.5em; }
 
@@ -390,11 +347,7 @@ table {
 /*--------------------------------------------------------------
 4.0 Forms
 --------------------------------------------------------------*/
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"],
-.button {
+button, input[type="button"], input[type="reset"], input[type="submit"], .button {
   cursor: pointer;
   width: auto;
   color: #81C784;
@@ -405,18 +358,12 @@ input[type="submit"],
   -moz-transition: all 0.3s linear;
   transition: all 0.3s linear; }
 
-button:hover,
-input:hover[type="button"],
-input:hover[type="reset"],
-input:hover[type="submit"],
-.button:hover {
+button:hover, input:hover[type="button"], input:hover[type="reset"], input:hover[type="submit"], .button:hover {
   border-color: #81C784;
   background: #81C784;
   color: #FAFAFA; }
 
-input,
-select,
-textarea {
+input, select, textarea {
   border-color: rgba(0, 0, 0, 0.1);
   background-color: #FAFAFA;
   display: block;
@@ -433,8 +380,7 @@ textarea {
   -moz-border-radius: 10px;
   border-radius: 10px; }
 
-input:focus,
-textarea:focus {
+input:focus, textarea:focus {
   outline: none;
   border-color: rgba(0, 0, 0, 0.25);
   background-color: #FFF;
@@ -512,21 +458,15 @@ a {
 .menu-toggle {
   display: none; }
 
-.site-main .comment-navigation,
-.site-main .paging-navigation,
-.site-main .post-navigation {
+.site-main .comment-navigation, .site-main .paging-navigation, .site-main .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden; }
 
-.comment-navigation .nav-previous,
-.paging-navigation .nav-previous,
-.post-navigation .nav-previous {
+.comment-navigation .nav-previous, .paging-navigation .nav-previous, .post-navigation .nav-previous {
   float: left;
   width: 50%; }
 
-.comment-navigation .nav-next,
-.paging-navigation .nav-next,
-.post-navigation .nav-next {
+.comment-navigation .nav-next, .paging-navigation .nav-next, .post-navigation .nav-next {
   float: right;
   text-align: right;
   width: 50%; }
@@ -742,9 +682,9 @@ a {
   -o-transform: translateX(0);
   transform: translateX(0);
   visibility: visible;
-  -webkit-transition: -webkit-transform .4s 0s, visibility 0s 0s;
-  -moz-transition: -moz-transform .4s 0s, visibility 0s 0s;
-  transition: transform .4s 0s, visibility 0s 0s;
+  -webkit-transition: -webkit-transform 0.4s 0s, visibility 0s 0s;
+  -moz-transition: -moz-transform 0.4s 0s, visibility 0s 0s;
+  transition: transform 0.4s 0s, visibility 0s 0s;
   /* smooth the scrolling on touch devices - webkit browsers */
   -webkit-overflow-scrolling: touch; }
 
@@ -799,27 +739,11 @@ a {
 /*--------------------------------------------------------------
 8.0 Clearings
 --------------------------------------------------------------*/
-.clear:before,
-.clear:after,
-.entry-content:before,
-.entry-content:after,
-.comment-content:before,
-.comment-content:after,
-.site-header:before,
-.site-header:after,
-.site-content:before,
-.site-content:after,
-.site-footer:before,
-.site-footer:after {
+.clear:before, .clear:after, .entry-content:before, .entry-content:after, .comment-content:before, .comment-content:after, .site-header:before, .site-header:after, .site-content:before, .site-content:after, .site-footer:before, .site-footer:after {
   content: "";
   display: table; }
 
-.clear:after,
-.entry-content:after,
-.comment-content:after,
-.site-header:after,
-.site-content:after,
-.site-footer:after {
+.clear:after, .entry-content:after, .comment-content:after, .site-header:after, .site-content:after, .site-footer:after {
   clear: both; }
 
 /*--------------------------------------------------------------
@@ -847,17 +771,13 @@ a {
 .hentry {
   margin: 0 0 1.5em; }
 
-.byline,
-.updated:not(.published) {
+.byline, .updated:not(.published) {
   display: none; }
 
-.single .byline,
-.group-blog .byline {
+.single .byline, .group-blog .byline {
   display: inline; }
 
-.page-content,
-.entry-content,
-.entry-summary {
+.page-content, .entry-content, .entry-summary {
   margin: 1.5em 0 0; }
 
 .page-links {
@@ -867,8 +787,7 @@ a {
 /*--------------------------------------------------------------
 10.2 Asides
 --------------------------------------------------------------*/
-.blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
+.blog .format-aside .entry-title, .archive .format-aside .entry-title {
   display: none; }
 
 /*--------------------------------------------------------------
@@ -884,8 +803,7 @@ a {
 11.0 Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation,
-.infinite-scroll.neverending .site-footer {
+.infinite-scroll .posts-navigation, .infinite-scroll.neverending .site-footer {
   /* Theme Footer (when set to scrolling) */
   display: none; }
 
@@ -896,18 +814,14 @@ a {
 /*--------------------------------------------------------------
 12.0 Media
 --------------------------------------------------------------*/
-.page-content .wp-smiley,
-.entry-content .wp-smiley,
-.comment-content .wp-smiley {
+.page-content .wp-smiley, .entry-content .wp-smiley, .comment-content .wp-smiley {
   border: none;
   margin-bottom: 0;
   margin-top: 0;
   padding: 0; }
 
 /* Make sure embeds and iframes fit their containers. */
-embed,
-iframe,
-object {
+embed, iframe, object {
   max-width: 100%; }
 
 /*--------------------------------------------------------------
@@ -968,13 +882,11 @@ object {
 /*--------------------------------------------------------------
 13.0 Theme
 --------------------------------------------------------------*/
-html,
-body {
+html, body {
   height: 100%;
   width: 100%; }
 
-.site-content,
-.site-footer {
+.site-content, .site-footer {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 50px; }
@@ -997,7 +909,7 @@ body {
 
 .home-middle {
   background: #424242;
-  background-image: url("http://localhost/Mears/wp-content/uploads/2015/01/office-space.jpg");
+  background-image: url('http://localhost/Mears/wp-content/uploads/2015/01/office-space.jpg');
   background-size: cover;
   background-repeat: no-repeat no-repeat; }
   .home-middle .home-middle-widget {
@@ -1036,11 +948,9 @@ body {
   float: left; }
 
 @media screen and (max-width: 800px) {
-  .home-contact--info,
-  .home-contact--form {
+  .home-contact--info, .home-contact--form {
     width: 100%; }
-    .home-contact--info .mug,
-    .home-contact--form .mug {
+    .home-contact--info .mug, .home-contact--form .mug {
       display: none; } }
 
 .site-footer {
@@ -1057,7 +967,7 @@ body {
     padding: 1.618em; }
 
 .name {
-  font-family: "Fjalla One", sans-serif;
+  font-family: 'Fjalla One', sans-serif;
   font-size: 28.8px;
   font-size: 1.8rem; }
 
@@ -1085,8 +995,7 @@ body {
   padding: 1.618em;
   margin-top: 1.618em;
   text-align: center; }
-  .portfolio-head h3,
-  .portfolio-head p {
+  .portfolio-head h3, .portfolio-head p {
     margin: 0; }
 
 .website-entry {
@@ -1094,8 +1003,7 @@ body {
   display: table;
   margin-bottom: 4.235801032em; }
 
-.website-image,
-.website-post {
+.website-image, .website-post {
   width: 30%;
   float: left;
   margin-right: 3%;
@@ -1113,15 +1021,13 @@ body {
     height: 100%;
     width: 100%; }
 
-.website-post,
-.website-post-head {
+.website-post, .website-post-head {
   background: #EEEEEE;
   padding: 1.618em; }
 
 .website-post-head {
   margin-top: 1.618em;
   text-align: center; }
-  .website-post-head h2,
-  .website-post-head p {
+  .website-post-head h2, .website-post-head p {
     margin: 0;
     padding: 0; }

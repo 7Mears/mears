@@ -5,12 +5,10 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     uglify : {
-
       build : {
         src: 'src/js/*.js',
         dest: 'js/script.min.js'
       },
-
       dev: {
         options: {
           beautify: true,
@@ -21,14 +19,45 @@ module.exports = function(grunt) {
         src: 'src/js/*.js',
         dest: 'js/script.min.js'
       }
+    },
+    sass: {
+      build: {
+        options: {
+          outputStyle: 'compressed'
+        },
+        files: {
+          'style.css' : 'src/sass/style.scss'
+        }
+      },
+      dev: {
+        options: {
+          outputStyle: 'expanded'
+        },
+        files: {
+          'style.css' : 'src/sass/style.scss'
+        }
+      }
+    },
+    watch: {
+      js: {
+        files: ['src/js/*.js'],
+        tasks: ['uglify:dev']
+      },
+      css: {
+        files: ['src/sass/**/*.scss'],
+        tasks: ['sass:dev']
+      }
     }
+
   });
 
   // Load the plugins
   grunt.loadNpmTasks( 'grunt-contrib-uglify' );
+  grunt.loadNpmTasks( 'grunt-contrib-watch' );
+  grunt.loadNpmTasks( 'grunt-sass' );
 
   // Register task
-  grunt.registerTask('default', ['uglify:dev']);
-  grunt.registerTask('build', ['uglify:build']);
+  grunt.registerTask('default', ['uglify:dev','sass:dev']);
+  grunt.registerTask('build', ['uglify:build', 'sass:build']);
 
 };
