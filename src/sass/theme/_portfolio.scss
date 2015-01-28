@@ -34,7 +34,7 @@
 
 @media screen and (max-width: $M) {
   .portfolio-head {
-    margin-top: $column;
+    margin-top: ($column + $gutter);
   }
 
   .portfolio-post {

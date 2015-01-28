@@ -1028,7 +1028,7 @@ html, body {
 
 @media screen and (max-width: 800px) {
   .portfolio-head {
-    margin-top: 4.235801032em; }
+    margin-top: 5.853801032em; }
 
   .portfolio-post {
     width: 100%;
@@ -1069,3 +1069,15 @@ html, body {
   .website-post-head h2, .website-post-head p {
     margin: 0;
     padding: 0; }
+
+@media screen and (max-width: 800px) {
+  .website-image, .website-post {
+    width: 100%;
+    margin: 1.618em 0; }
+
+  .website-post .button {
+    display: block; }
+
+  .website-post-head {
+    margin-top: 5.853801032em; }
+ }

@@ -36,3 +36,21 @@
     padding: 0;
   }
 }
+
+@media screen and (max-width: $M)  {
+  .website-image,
+  .website-post {
+    width: 100%;
+    margin: $gutter 0;
+  }
+
+  .website-post {
+    .button {
+      display: block;
+    }
+  }
+
+  .website-post-head {
+    margin-top: ($column + $gutter);
+  }
+}
