@@ -1010,8 +1010,7 @@ html, body {
 .portfolio-post--image {
   width: 100%;
   height: 400px;
-  overflow: hidden;
-  border: 5px solid #ECEFF1; }
+  overflow: hidden; }
 
 .portfolio-post--title {
   margin-bottom: 0; }
@@ -1026,6 +1025,22 @@ html, body {
   text-align: center; }
   .portfolio-head h3, .portfolio-head p {
     margin: 0; }
+
+@media screen and (max-width: 800px) {
+  .portfolio-head {
+    margin-top: 4.235801032em; }
+
+  .portfolio-post {
+    width: 100%;
+    margin: 0; }
+
+  .portfolio-post--image {
+    height: auto; }
+
+  .portfolio-post--links .button {
+    display: block;
+    margin-bottom: 1.618em; }
+ }
 
 .website-entry {
   content: "";
