@@ -243,7 +243,7 @@ button,
 input,
 select,
 textarea {
-  color: #616161;
+  color: #607D8B;
   font-family: "Varela Round", sans-serif;
   font-size: 16px;
   font-size: 1rem;
@@ -397,8 +397,8 @@ input[type="submit"],
 .button {
   cursor: pointer;
   width: auto;
-  color: #00BCD4;
-  border: 3px solid #00BCD4;
+  color: #81C784;
+  border: 3px solid #81C784;
   padding: 10px 20px;
   border-radius: 10px;
   -webkit-transition: all 0.3s linear;
@@ -410,8 +410,8 @@ input:hover[type="button"],
 input:hover[type="reset"],
 input:hover[type="submit"],
 .button:hover {
-  border-color: #00BCD4;
-  background: #00BCD4;
+  border-color: #81C784;
+  background: #81C784;
   color: #FAFAFA; }
 
 input,
@@ -449,12 +449,12 @@ textarea:focus {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-  color: #00BCD4;
+  color: #81C784;
   text-decoration: none; }
   a:visited {
-    color: #00BCD4; }
+    color: #81C784; }
   a:hover, a:focus, a:active {
-    color: #FFC107; }
+    color: #009688; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {

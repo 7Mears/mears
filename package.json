@@ -1,0 +1,22 @@
+{
+  "name": "Mears",
+  "version": "0.0.1",
+  "description": "My website",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/7Mears/mears.git"
+  },
+  "author": "Jordan Mears",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/7Mears/mears/issues"
+  },
+  "homepage": "https://github.com/7Mears/mears",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}
