@@ -12,6 +12,7 @@ get_header(); ?>
 <div class="website-post-head">
   <h2><?php the_title(); ?></h2>
   <p><?php the_field('tagline'); ?></p>
+  <h1 class="back-dec-portfolio"><?php the_field('tagline'); ?></h1>
 </div>
 
 <div id="content" class="site-content">

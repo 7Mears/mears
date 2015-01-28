@@ -4,6 +4,7 @@
   min-width: 100%;
   padding-top: $column;
   text-align: center;
+  position: relative;
 
   ul {
     margin: 0;
@@ -12,7 +13,7 @@
 
   li {
     display: inline-block;
-    padding: $gutter;
+    padding: $gutter $gutter 0 $gutter;
   }
 }
 
@@ -20,6 +21,7 @@
   font-family: $font__alt;
   @include font-size(1.8);
 }
+
 
 @media screen and (max-width: $M) {
   .site-footer {

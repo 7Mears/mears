@@ -29,12 +29,26 @@
 .website-post-head {
   margin-top: $gutter;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 
   h2,
   p {
     margin: 0;
     padding: 0;
+    position: relative;
+    z-index: 2;
   }
+}
+
+.back-dec-portfolio {
+  font-size: 200px;
+  color: $color__light;
+  position: absolute;
+  top: -75px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 @media screen and (max-width: $M)  {
