@@ -13,16 +13,23 @@
 
 get_header(); ?>
 
+  </div>
+  <div class="portfolio-head">
+    <h3>Portfolio</h3>
+    <p>Selected pieces of works that I have done, have a look.</p>
+  </div>
+  <div id="content" class="site-content">
+
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 
-    <h3>Portfolio</h3>
-    <p>A few selected pieces of works that I have done, check them out!</p>
+
+
     <?php if ( have_posts() ) : ?>
 
       <?php /* Start the Loop */ ?>
       <?php while ( have_posts() ) : the_post(); ?>
-      <div class="portfolio-post--entry">
+      <div class="portfolio-post">
         <h2 class="portfolio-post--title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
         <div class="portfolio-post--image">

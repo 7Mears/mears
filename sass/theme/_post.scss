@@ -1,0 +1,45 @@
+.website-entry {
+  @include clearfix();
+  margin-bottom: $column;
+}
+
+.website-image,
+.website-post {
+  width: 30%;
+  float: left;
+  margin-right: 3%;
+  margin-bottom: $gutter;
+  height: 550px;
+  overflow: hidden;
+}
+
+.website-post {
+  overflow: scroll;
+}
+
+.website-image {
+  overflow: hidden;
+  border: 5px solid $color__light-alt;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.website-post,
+.website-post-head {
+  background: $color__light-alt;
+  padding: $gutter;
+}
+
+.website-post-head {
+  margin-top: $gutter;
+  text-align: center;
+
+  h2,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}

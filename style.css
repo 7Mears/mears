@@ -1043,30 +1043,6 @@ body {
     .home-contact--form .mug {
       display: none; } }
 
-.portfolio-post--entry {
-  width: 30%;
-  float: left;
-  margin-right: 3%;
-  margin-bottom: 4.235801032em;
-  text-align: center; }
-
-.portfolio-post--image {
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.4s linear;
-  -moz-transition: 0.4s linear;
-  transition: 0.4s linear; }
-  .portfolio-post--image:hover {
-    box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.5); }
-
-.portfolio-post--title {
-  margin-bottom: -20px; }
-
-.portfolio-post--links {
-  margin: 1.618em 0; }
-
 .site-footer {
   background: #424242;
   color: #EEEEEE;
@@ -1084,3 +1060,68 @@ body {
   font-family: "Fjalla One", sans-serif;
   font-size: 28.8px;
   font-size: 1.8rem; }
+
+.portfolio-post {
+  width: 30%;
+  float: left;
+  margin-right: 3%;
+  margin-bottom: 4.235801032em;
+  text-align: center; }
+
+.portfolio-post--image {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border: 5px solid #EEEEEE; }
+
+.portfolio-post--title {
+  margin-bottom: 0; }
+
+.portfolio-post--links {
+  margin: 1.618em 0; }
+
+.portfolio-head {
+  background: #EEEEEE;
+  padding: 1.618em;
+  margin-top: 1.618em;
+  text-align: center; }
+  .portfolio-head h3,
+  .portfolio-head p {
+    margin: 0; }
+
+.website-entry {
+  content: "";
+  display: table;
+  margin-bottom: 4.235801032em; }
+
+.website-image,
+.website-post {
+  width: 30%;
+  float: left;
+  margin-right: 3%;
+  margin-bottom: 1.618em;
+  height: 550px;
+  overflow: hidden; }
+
+.website-post {
+  overflow: scroll; }
+
+.website-image {
+  overflow: hidden;
+  border: 5px solid #EEEEEE; }
+  .website-image img {
+    height: 100%;
+    width: 100%; }
+
+.website-post,
+.website-post-head {
+  background: #EEEEEE;
+  padding: 1.618em; }
+
+.website-post-head {
+  margin-top: 1.618em;
+  text-align: center; }
+  .website-post-head h2,
+  .website-post-head p {
+    margin: 0;
+    padding: 0; }
