@@ -20,3 +20,12 @@
   font-family: $font__alt;
   @include font-size(1.8);
 }
+
+@media screen and (max-width: $M) {
+  .site-footer {
+    li {
+      display: block;
+      padding: 1em;
+    }
+  }
+}

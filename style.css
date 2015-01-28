@@ -994,6 +994,12 @@ html, body {
   font-size: 28.8px;
   font-size: 1.8rem; }
 
+@media screen and (max-width: 800px) {
+  .site-footer li {
+    display: block;
+    padding: 1em; }
+ }
+
 .portfolio-post {
   width: 30%;
   float: left;
