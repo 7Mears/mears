@@ -903,6 +903,14 @@ html, body {
   margin: 0 auto;
   padding: 0 50px; }
 
+@media screen and (max-width: 800px) {
+  .site-content, .site-footer, .site-title {
+    padding: 0 1.618em; }
+
+  .site-title {
+    text-align: center; }
+ }
+
 .home-top {
   padding: 1.618em 0 8.471602064em 0; }
 
@@ -976,6 +984,11 @@ html, body {
     display: none; }
  }
 
+@media screen and (max-width: 500px) {
+  .home-top {
+    margin-top: 150px; }
+ }
+
 .site-footer {
   background: #263238;
   color: #ECEFF1;
@@ -1028,7 +1041,7 @@ html, body {
 
 @media screen and (max-width: 800px) {
   .portfolio-head {
-    margin-top: 5.853801032em; }
+    margin-top: 150px; }
 
   .portfolio-post {
     width: 100%;
@@ -1079,5 +1092,5 @@ html, body {
     display: block; }
 
   .website-post-head {
-    margin-top: 5.853801032em; }
+    margin-top: 150px; }
  }

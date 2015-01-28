@@ -99,3 +99,8 @@
   }
 
 }
+@media screen and (max-width: $S) {
+  .home-top {
+    margin-top: 150px;
+  }
+}

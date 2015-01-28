@@ -20,3 +20,15 @@ body {
   margin: 0 auto;
   padding: 0 50px;
 }
+
+@media screen and (max-width: $M) {
+  .site-content,
+  .site-footer,
+  .site-title {
+    padding: 0 $gutter;
+  }
+
+  .site-title {
+    text-align: center;
+  }
+}
