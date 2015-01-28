@@ -19,7 +19,7 @@ get_header(); ?>
     <div class="website-post">
         <?php the_content(); ?>
       <?php endwhile; // end of the loop. ?>
-      <a class="button" href="<?php the_field('website_link'); ?>">Let's see the real thing</a>
+      <a href="<?php the_field('website_link'); ?>"><span class="button">Let's see the real thing</span></a>
     </div><!-- /website-post -->
 
     <div class="website-image">

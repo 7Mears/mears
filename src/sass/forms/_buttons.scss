@@ -5,11 +5,12 @@ input[type="submit"],
 .button {
 	cursor: pointer;
 	width: auto;
-	color: $color__primary;
+	border-color: $color__primary;
+	background: $color__primary;
 	border: 3px solid $color__primary;
+	color: $color__light;
 	padding: 10px 20px;
 	border-radius: $radius;
-	@include transition(all 0.3s linear);
 }
 
 button:hover,
@@ -17,7 +18,16 @@ input:hover[type="button"],
 input:hover[type="reset"],
 input:hover[type="submit"],
 .button:hover {
-	border-color: $color__primary;
-	background: $color__primary;
-	color: $color__light;
+	color: $color__primary;
+	background: $color__light;
+	border: 3px solid $color__primary;
+}
+
+a,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button {
+	@include transition(all 0.3s linear);
 }

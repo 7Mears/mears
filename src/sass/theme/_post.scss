@@ -9,18 +9,11 @@
   float: left;
   margin-right: 3%;
   margin-bottom: $gutter;
-  height: 550px;
+  height: auto;
   overflow: hidden;
-}
-
-.website-post {
-  overflow: scroll;
 }
 
 .website-image {
-  overflow: hidden;
-  border: 5px solid $color__light-alt;
-
   img {
     height: 100%;
     width: 100%;

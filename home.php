@@ -37,8 +37,8 @@ get_header(); ?>
         </div>
 
         <div class="portfolio-post--links">
-          <a href="<?php the_permalink(); ?>" class="button">More info</a>
-          <a href="<?php the_field('website_link'); ?>" class="button">Live site</a>
+          <a href="<?php the_permalink(); ?>"><span class="button">More info</span></a>
+          <a href="<?php the_field('website_link'); ?>"><span class="button">Live site</span></a>
         </div>
 
 
