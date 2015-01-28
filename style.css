@@ -952,10 +952,29 @@ html, body {
   float: left; }
 
 @media screen and (max-width: 800px) {
-  .home-contact--info, .home-contact--form {
+  .home-top-widget h1, .home-top-widget p, .home-contact--info, .home-contact--form {
     width: 100%; }
-    .home-contact--info .mug, .home-contact--form .mug {
-      display: none; } }
+
+  .home-top-widget h1 {
+    padding-top: 1.618em;
+    font-size: 32px;
+    font-size: 2rem; }
+
+  .home-top-widget .button {
+    display: block;
+    margin-bottom: 1.618em; }
+
+  .home-top, .home-middle, .home-bottom {
+    padding: 0; }
+    .home-top h2, .home-middle h2, .home-bottom h2 {
+      margin: 0; }
+
+  .home-contact--info {
+    text-align: left; }
+
+  .mug {
+    display: none; }
+ }
 
 .site-footer {
   background: #263238;

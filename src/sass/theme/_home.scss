@@ -11,7 +11,6 @@
   }
 }
 
-
 .home-middle {
   background: $color__dark;
   background-image: url('http://localhost/Mears/wp-content/uploads/2015/01/office-space.jpg');
@@ -65,13 +64,38 @@
   float: left;
 }
 
-.home-contact--info,
-.home-contact--form {
-  @media screen and (max-width: $M) {
+@media screen and (max-width: $M) {
+  .home-top-widget h1,
+  .home-top-widget p,
+  .home-contact--info,
+  .home-contact--form {
     width: 100%;
+  }
+  .home-top-widget h1 {
+    padding-top: $gutter;
+    @include font-size(2);
+  }
 
-    .mug {
-      display: none;
+  .home-top-widget .button {
+    display: block;
+    margin-bottom: $gutter;
+  }
+
+  .home-top,
+  .home-middle,
+  .home-bottom {
+    padding: 0;
+
+    h2 {
+      margin: 0;
     }
   }
+
+  .home-contact--info {
+    text-align: left;
+  }
+  .mug {
+    display: none;
+  }
+
 }
