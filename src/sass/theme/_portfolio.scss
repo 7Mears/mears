@@ -25,10 +25,14 @@
   padding: $gutter;
   margin-top: $gutter;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 
   h3,
   p {
     margin: 0;
+    position: relative;
+    z-index: 2;
   }
 }
 

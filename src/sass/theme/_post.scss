@@ -3,21 +3,29 @@
   margin-bottom: $column;
 }
 
-.website-image,
-.website-post {
-  width: 30%;
-  float: left;
-  margin-right: 3%;
-  margin-bottom: $gutter;
-  height: auto;
-  overflow: hidden;
+.website-grid {
+  -moz-column-count: 3;
+  -moz-column-gap: $gutter;
+  -moz-column-fill: auto;
+  -webkit-column-count: 3;
+  -webkit-column-gap: $gutter;
+  -webkit-column-fill: auto;
+  column-count: 3;
+  column-gap: $gutter;
+  column-fill: auto;
 }
 
-.website-image {
+.website-grid {
   img {
+    border: 5px solid $color__light-alt;
     height: 100%;
     width: 100%;
+    margin-bottom: $gutter;
   }
+}
+
+.website-post {
+  margin-bottom: $gutter;
 }
 
 .website-post,
@@ -41,7 +49,7 @@
   }
 }
 
-.back-dec-portfolio {
+.back-portfolio {
   font-size: 200px;
   color: $color__light;
   position: absolute;
@@ -51,20 +59,30 @@
   padding: 0;
 }
 
-@media screen and (max-width: $M)  {
-  .website-image,
-  .website-post {
-    width: 100%;
-    margin: $gutter 0;
-  }
 
-  .website-post {
-    .button {
-      display: block;
-    }
+@media screen and (max-width: $L)  {
+  .website-grid {
+    -moz-column-count: 2;
+    -moz-column-gap: $gutter;
+    -moz-column-fill: auto;
+    -webkit-column-count: 2;
+    -webkit-column-gap: $gutter;
+    -webkit-column-fill: auto;
+    column-count: 2;
+    column-gap: $gutter;
+    column-fill: auto;
+  }
+}
+
+@media screen and (max-width: $M)  {
+  .website-grid {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
   }
 
   .website-post-head {
     margin-top: 150px;
+    margin-bottom: $gutter;
   }
 }

@@ -228,3 +228,27 @@ add_filter ('wp_nav_menu','current_to_active');
 
 
 add_action( 'after_setup_theme', 'lexicon_setup' );
+
+// Remove meta links at header
+remove_action( 'wp_head', 'wp_generator' ) ;
+remove_action( 'wp_head', 'wlwmanifest_link' ) ;
+remove_action( 'wp_head', 'rsd_link' ) ;
+// Remove RSS feeds
+remove_action( 'wp_head', 'feed_links', 2 );
+remove_action( 'wp_head', 'feed_links_extra', 3 );
+
+
+/**
+* Load Enqueued Scripts in the Footer
+*
+* Automatically move JavaScript code to page footer, speeding up page loading time.
+*/
+function footer_enqueue_scripts() {
+	remove_action('wp_head', 'wp_print_scripts');
+		remove_action('wp_head', 'wp_print_head_scripts', 9);
+		// remove_action('wp_head', 'wp_enqueue_scripts', 1);
+		add_action('wp_footer', 'wp_print_scripts', 5);
+		add_action('wp_footer', 'wp_enqueue_scripts', 5);
+		add_action('wp_footer', 'wp_print_head_scripts', 5);
+}
+add_action('after_setup_theme', 'footer_enqueue_scripts');
