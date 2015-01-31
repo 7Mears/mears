@@ -10,6 +10,7 @@
   width: 100%;
   height: 400px;
   overflow: hidden;
+  border: 5px solid $color__light-alt;
 }
 
 .portfolio-post--title {
@@ -33,6 +34,9 @@
     margin: 0;
     position: relative;
     z-index: 2;
+  }
+  p {
+    font-style: italic;
   }
 }
 

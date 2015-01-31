@@ -16,7 +16,7 @@ get_header(); ?>
   </div>
   <div class="portfolio-head">
     <h3>Portfolio</h3>
-    <p>Selected pieces of works that I have done, have a look.</p>
+    <p>I've built websites for musicians, bloggers, professionals, and communities. Here is some of my recent work.</p>
     <h1 class="back-portfolio">Websites</h1>
   </div>
   <div id="content" class="site-content">
@@ -39,7 +39,7 @@ get_header(); ?>
 
         <div class="portfolio-post--links">
           <a href="<?php the_permalink(); ?>"><span class="button">More info</span></a>
-          <a href="<?php the_field('website_link'); ?>"><span class="button">Live site</span></a>
+          <a href="<?php the_field('website_link'); ?>"><span class="button">Live site <i class="fa fa-external-link"></i></span></a>
         </div>
 
 

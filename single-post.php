@@ -22,7 +22,7 @@ get_header(); ?>
     <div class="website-post">
         <?php the_content(); ?>
       <?php endwhile; // end of the loop. ?>
-      <a href="<?php the_field('website_link'); ?>"><span class="button">Let's see the real thing</span></a>
+      <a href="<?php the_field('website_link'); ?>"><span class="button">Let's see the real thing <i class="fa fa-external-link"></i></span></a>
     </div><!-- /website-post -->
 
       <?php

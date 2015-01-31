@@ -20,7 +20,7 @@ get_header(); ?>
   <?php if ( is_active_sidebar( 'homemiddle' ) ) : ?>
   </div><!-- #site-content -->
     <section id="home-middle" class="home-middle">
-      <?php dynamic_sidebar( 'homemiddle' ); ?>
+        <?php dynamic_sidebar( 'homemiddle' ); ?>
     </section>
     <!-- /home-middle - /about -->
   <div id="content" class="site-content">

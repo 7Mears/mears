@@ -38,6 +38,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	10.2 Asides
 	10.3 Comments
 11.0 Infinite scroll
+	11.1 Parallax scroll
 12.0 Media
 	12.1 Captions
 	12.2 Galleries
@@ -101,6 +102,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 11.0 Infinite scroll
 --------------------------------------------------------------*/
 @import "modules/infinite-scroll";
+
+/*--------------------------------------------------------------
+11.1 Parallax scroll
+--------------------------------------------------------------*/
+@import "modules/parallax";
 
 /*--------------------------------------------------------------
 12.0 Media

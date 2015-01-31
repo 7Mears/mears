@@ -21,6 +21,14 @@ body {
   padding: 0 50px;
 }
 
+.button .fa {
+  padding-left: 10px;
+}
+.home-bottom .fa {
+  font-size: 2em;
+  margin: 5px;
+}
+
 @media screen and (max-width: $M) {
   .site-content,
   .site-footer,
