@@ -2,11 +2,6 @@
 /**
  * The main template file.
  *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package Mears
  */
@@ -16,7 +11,7 @@ get_header(); ?>
   </div>
   <div class="website-post-head">
     <h2>Portfolio</h2>
-    <p>I've built websites for musicians, bloggers, professionals, and communities. Here is some of my recent work.</p>
+    <p>Websites I've built</p>
     <h1 class="back-portfolio">Websites</h1>
   </div>
   <div id="content" class="site-content">

@@ -956,7 +956,7 @@ html, body {
     color: #ECEFF1; }
 
 .home-bottom {
-  padding: 4.235801032em 0; }
+  padding: 1.618em 0 4.235801032em 0; }
   .home-bottom .mug {
     width: 100%;
     margin: 1em auto; }
@@ -1054,11 +1054,13 @@ html, body {
   position: relative;
   overflow: hidden; }
   .website-post-head h2, .website-post-head p {
-    margin: 0;
-    padding: 0;
     position: relative;
-    z-index: 2; }
+    z-index: 2;
+    padding: 0; }
+  .website-post-head h2 {
+    margin: 0; }
   .website-post-head p {
+    margin: -15px 0 0 0;
     font-style: italic; }
 
 @media screen and (max-width: 800px) {
@@ -1107,7 +1109,7 @@ html, body {
   font-size: 200px;
   color: #FAFAFA;
   position: absolute;
-  top: -75px;
+  top: -85px;
   width: 100%;
   margin: 0 auto;
   padding: 0; }
