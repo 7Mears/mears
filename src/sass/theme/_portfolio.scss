@@ -21,28 +21,35 @@
   margin: $gutter 0;
 }
 
-.portfolio-head {
+.website-post,
+.website-post-head {
   background: $color__light-alt;
   padding: $gutter;
+}
+
+.website-post-head {
   margin-top: $gutter;
   text-align: center;
   position: relative;
   overflow: hidden;
 
-  h3,
+  h2,
   p {
     margin: 0;
+    padding: 0;
     position: relative;
     z-index: 2;
   }
+
   p {
     font-style: italic;
   }
 }
 
 @media screen and (max-width: $M) {
-  .portfolio-head {
+  .website-post-head {
     margin-top: 150px;
+    margin-bottom: $gutter;
   }
 
   .portfolio-post {

@@ -1044,23 +1044,27 @@ html, body {
 .portfolio-post--links {
   margin: 1.618em 0; }
 
-.portfolio-head {
+.website-post, .website-post-head {
   background: #ECEFF1;
-  padding: 1.618em;
+  padding: 1.618em; }
+
+.website-post-head {
   margin-top: 1.618em;
   text-align: center;
   position: relative;
   overflow: hidden; }
-  .portfolio-head h3, .portfolio-head p {
+  .website-post-head h2, .website-post-head p {
     margin: 0;
+    padding: 0;
     position: relative;
     z-index: 2; }
-  .portfolio-head p {
+  .website-post-head p {
     font-style: italic; }
 
 @media screen and (max-width: 800px) {
-  .portfolio-head {
-    margin-top: 150px; }
+  .website-post-head {
+    margin-top: 150px;
+    margin-bottom: 1.618em; }
 
   .portfolio-post {
     width: 100%;
@@ -1099,23 +1103,6 @@ html, body {
 .website-post {
   margin-bottom: 1.618em; }
 
-.website-post, .website-post-head {
-  background: #ECEFF1;
-  padding: 1.618em; }
-
-.website-post-head {
-  margin-top: 1.618em;
-  text-align: center;
-  position: relative;
-  overflow: hidden; }
-  .website-post-head h2, .website-post-head p {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    z-index: 2; }
-  .website-post-head p {
-    font-style: italic; }
-
 .back-portfolio {
   font-size: 200px;
   color: #FAFAFA;
@@ -1143,8 +1130,4 @@ html, body {
     -moz-column-count: 1;
     -webkit-column-count: 1;
     column-count: 1; }
-
-  .website-post-head {
-    margin-top: 150px;
-    margin-bottom: 1.618em; }
  }

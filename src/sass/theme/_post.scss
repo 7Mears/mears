@@ -28,31 +28,6 @@
   margin-bottom: $gutter;
 }
 
-.website-post,
-.website-post-head {
-  background: $color__light-alt;
-  padding: $gutter;
-}
-
-.website-post-head {
-  margin-top: $gutter;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-
-  h2,
-  p {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    z-index: 2;
-  }
-
-  p {
-    font-style: italic;
-  }
-}
-
 .back-portfolio {
   font-size: 200px;
   color: $color__light;
@@ -83,10 +58,5 @@
     -moz-column-count: 1;
     -webkit-column-count: 1;
     column-count: 1;
-  }
-
-  .website-post-head {
-    margin-top: 150px;
-    margin-bottom: $gutter;
   }
 }
