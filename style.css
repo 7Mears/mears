@@ -559,6 +559,11 @@ a {
     -webkit-box-shadow: 0 0 20px #cccccc;
     -moz-box-shadow: 0 0 20px #cccccc;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); }
+  #menu-trigger:focus {
+    outline: none; }
+
+a:focus {
+  outline: none; }
 
 /* this span is the central line in the menu icon */
 .menu-icon {
