@@ -254,3 +254,33 @@ function footer_enqueue_scripts() {
 		add_action('wp_footer', 'wp_print_head_scripts', 5);
 }
 add_action('after_setup_theme', 'footer_enqueue_scripts');
+
+/**
+* Move admin bar to bottom on front-end only
+*/
+
+function fb_move_admin_bar() {
+		echo '
+		<style type="text/css">
+		body {
+		margin-top: -28px;
+		padding-bottom: 28px;
+		}
+		body.admin-bar #wphead {
+			padding-top: 0;
+		}
+		body.admin-bar #footer {
+			padding-bottom: 28px;
+		}
+		#wpadminbar {
+				top: auto !important;
+				bottom: 0;
+		}
+		#wpadminbar .quicklinks .menupop ul {
+				bottom: 28px;
+		}
+		</style>';
+}
+
+// on frontend area
+add_action( 'wp_head', 'fb_move_admin_bar' );

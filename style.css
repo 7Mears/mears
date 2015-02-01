@@ -939,7 +939,8 @@ html, body {
   background: #263238;
   background-image: url('http://localhost/Mears/wp-content/uploads/2015/01/office-space.jpg');
   background-size: cover;
-  background-repeat: no-repeat no-repeat; }
+  background-repeat: no-repeat;
+  background-position: center center; }
   .home-middle .home-middle-widget {
     max-width: 1400px;
     margin: 0 auto;
