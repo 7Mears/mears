@@ -37,32 +37,26 @@ get_header(); ?>
 
   <?php
   $image1 = get_field('website_screenshot_1');
+  $image2 = get_field('website_screenshot_2');
+  $image3 = get_field('website_screenshot_3');
+  $image4 = get_field('website_screenshot_4');
 
   if( !empty($image1) ): ?>
     <a rel="lightbox-0" href="<?php echo $image1['url']; ?>" ><img src="<?php echo $image1['url']; ?>" alt="<?php echo $image1['alt']; ?>" /></a>
   <!-- /website-image1 -->
   <?php endif; ?>
 
-  <?php
-  $image2 = get_field('website_screenshot_2');
-
-  if( !empty($image2) ): ?>
+  <?php if( !empty($image2) ): ?>
     <a rel="lightbox-0" href="<?php echo $image2['url']; ?>"><img src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>" /></a>
   <!-- /website-image2 -->
   <?php endif; ?>
 
-  <?php
-  $image3 = get_field('website_screenshot_3');
-
-  if( !empty($image3) ): ?>
+  <?php if( !empty($image3) ): ?>
     <a rel="lightbox-0" href="<?php echo $image3['url']; ?>"><img src="<?php echo $image3['url']; ?>" alt="<?php echo $image3['alt']; ?>" /></a>
   <!-- /website-image3 -->
   <?php endif; ?>
 
-  <?php
-  $image4 = get_field('website_screenshot_4');
-
-  if( !empty($image4) ): ?>
+  <?php if( !empty($image4) ): ?>
     <a rel="lightbox-0" href="<?php echo $image4['url']; ?>"><img src="<?php echo $image4['url']; ?>" alt="<?php echo $image4['alt']; ?>" /></a>
   <!-- /website-image4 -->
   <?php endif; ?>
