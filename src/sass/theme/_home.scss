@@ -83,8 +83,7 @@
   }
 
   .home-top,
-  .home-middle,
-  .home-bottom {
+  .home-middle {
     padding: 0;
 
     h2 {
@@ -103,5 +102,6 @@
 @media screen and (max-width: $S) {
   .home-top {
     margin-top: 150px;
+    text-align: center;
   }
 }

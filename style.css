@@ -401,7 +401,8 @@ input:focus, textarea:focus {
 --------------------------------------------------------------*/
 a {
   color: #0097A7;
-  text-decoration: none; }
+  text-decoration: none;
+  outline: none; }
   a:visited {
     color: #0097A7; }
   a:hover, a:focus, a:active {
@@ -924,7 +925,9 @@ html, body {
     padding: 0 1.618em; }
 
   .site-title {
-    text-align: center; }
+    text-align: center;
+    padding: 0;
+    margin: 0; }
  }
 
 .home-top {
@@ -989,9 +992,9 @@ html, body {
     display: block;
     margin-bottom: 1.618em; }
 
-  .home-top, .home-middle, .home-bottom {
+  .home-top, .home-middle {
     padding: 0; }
-    .home-top h2, .home-middle h2, .home-bottom h2 {
+    .home-top h2, .home-middle h2 {
       margin: 0; }
 
   .home-contact--info {
@@ -1003,7 +1006,8 @@ html, body {
 
 @media screen and (max-width: 500px) {
   .home-top {
-    margin-top: 150px; }
+    margin-top: 150px;
+    text-align: center; }
  }
 
 .site-footer {
@@ -1055,7 +1059,7 @@ html, body {
   padding: 1.618em; }
 
 .website-post-head {
-  margin-top: 1.618em;
+  margin-top: 4.235801032em;
   text-align: center;
   position: relative;
   overflow: hidden; }
