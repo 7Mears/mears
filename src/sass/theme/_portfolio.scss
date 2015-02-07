@@ -50,6 +50,12 @@
   }
 }
 
+@media screen and (max-width: $L) {
+  .portfolio-post--title {
+    @include font-size(2);
+  }
+}
+
 @media screen and (max-width: $M) {
   .website-post-head {
     margin-top: 125px;
