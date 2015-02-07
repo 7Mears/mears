@@ -52,7 +52,7 @@
 
 @media screen and (max-width: $M) {
   .website-post-head {
-    margin-top: 150px;
+    margin-top: 125px;
     margin-bottom: $gutter;
   }
 
@@ -68,6 +68,13 @@
   .portfolio-post--links .button {
     display: block;
     margin-bottom: $gutter;
+  }
+
+}
+
+@media screen and (max-width: $S) {
+  .website-post .button {
+    @include font-size(0.8);
   }
 
 }
