@@ -13,7 +13,7 @@
 
 .home-middle {
   background: $color__dark;
-  background-image: url('http://localhost/Mears/wp-content/uploads/2015/01/office-space.jpg');
+  background-image: url('http://jordanmears.com/wp-content/uploads/2015/02/office-space.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -96,6 +96,7 @@
   }
   .mug {
     display: none;
+    border-radius: 50%;
   }
 
 }

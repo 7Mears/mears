@@ -11,7 +11,7 @@ get_header(); ?>
   </div>
   <div class="website-post-head">
     <h2>Portfolio</h2>
-    <p>Websites I've built</p>
+    <p>A few of my projects</p>
     <h1 class="back-portfolio">Websites</h1>
   </div>
   <div id="content" class="site-content">
