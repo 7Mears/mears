@@ -51,6 +51,7 @@
   .mug {
     width: 100%;
     margin: 1em auto;
+    border-radius: 50%;
   }
 }
 
@@ -96,13 +97,17 @@
   }
   .mug {
     display: none;
-    border-radius: 50%;
   }
 
 }
 @media screen and (max-width: $S) {
   .home-top {
-    margin-top: 150px;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .home-contact--info,
+  .home-bottom-widget h2 {
     text-align: center;
   }
 }

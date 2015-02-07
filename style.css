@@ -930,6 +930,13 @@ html, body {
     margin: 0; }
  }
 
+@media screen and (max-width: 500px) {
+  .site-title {
+    font-size: 35.2px;
+    font-size: 2.2rem;
+    padding-top: 0.3em; }
+ }
+
 .home-top {
   padding: 1.618em 0 8.471602064em 0; }
 
@@ -968,7 +975,8 @@ html, body {
   padding: 1.618em 0 4.235801032em 0; }
   .home-bottom .mug {
     width: 100%;
-    margin: 1em auto; }
+    margin: 1em auto;
+    border-radius: 50%; }
 
 .home-contact--info {
   width: 30%;
@@ -1001,13 +1009,15 @@ html, body {
     text-align: left; }
 
   .mug {
-    display: none;
-    border-radius: 50%; }
+    display: none; }
  }
 
 @media screen and (max-width: 500px) {
   .home-top {
-    margin-top: 150px;
+    margin-top: 50px;
+    text-align: center; }
+
+  .home-contact--info, .home-bottom-widget h2 {
     text-align: center; }
  }
 
