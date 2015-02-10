@@ -27,8 +27,7 @@
 	</div><!-- #footer-widget -->
 	<?php endif; ?>
 </nav><!-- #site-navigation -->
-
 <?php wp_footer(); ?>
-
+<?php include_once("analyticstracking.php") ?>
 </body>
 </html>
